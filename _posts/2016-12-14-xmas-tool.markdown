@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Epi-interactive Xmas tool 2016"
+image-sml: "xmas-2016-sml.png"
+image: ["xmas-2016-4-full.png", "xmas-2016-1v2-full.jpg", "xmas-2016-2-full.png", "xmas-2016-3-full.jpg"]
+date:   2016-12-14 12:00:00 +1200
+categories: portfolio
+caption: "A fun interactive tool to show where the team at Epi-interactive has been throughout the year."
+---
+
+This was a fun project sent out to Epi-interactive clients. It contains information about where the team had travelled
+throughout 2016 and the statistics surrounding their journeys.
+
+The project is built without a JavaScript framework like AngularJS and without a front-end framework like Bootstrap.
+I decided early on that they were unnecessary for such a compact project and would only increase page load times.
+
+As the data wasn't finalised during the build process, I created easy to update JSON data files. Modifying these
+will cause the tool to update animations, timings, locations, text, and statistics accordingly.
+
+"Fun" challenges included the Internet Explorer SVG scaling bug, ensuring compatibility down to Internet Explorer 7, and
+making the whole thing work on mobile devices.
+
+I was the sole developer on this project, working in close collaboration with the designer.
+
+Packages I used from NPM:
+
+- Gulp - to handle building (merging, minifcation, copying assets).
+- Modernizr - ensuring that the app works on old browsers through feature detection.
+- Leaflet - for the awesome mapping capabilities.
+- HTML5 boilerplate - for CSS resets and basic Gulp config.
+- D3 - For animated graphs.

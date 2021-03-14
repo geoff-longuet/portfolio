@@ -1,0 +1,91 @@
+---
+layout: default
+indexable: false
+---
+<header class="segment mountains">
+  <div id="header-bg" class="opacity-img-fade"
+       bg-fadein-src="{{ site.baseurl }}/img/bg.jpg">
+  </div>
+  <div class="splash">
+    <div class="splash-inner">
+      <h1>Your Kind of Engineer</h1>
+      <p>With experience in various fields and a heartfelt appreciation of programming and good teamwork, I can adapt to your work environment, techniques, and projects.</p>
+    </div>
+  </div>
+  <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); overflow: visible">
+    <a href="#intro"><i id="splash-down-btn" class="fa fa-chevron-down fa-4x pop-btn"></i></a>
+  </div>
+</header>
+<div class="segment">
+
+</div>
+
+<div class="container-fluid segment-light" id="intro">
+  <div class="container">
+      <div class="row">
+      <div class="col-xs-12 col-lg-offset-2 col-lg-8 fancy">
+        <p>
+          Hi, I'm Geoff! I'm a software engineer from Wellington, New Zealand.
+        </p>
+        <p>
+          I'm on the lookout for new challenges. I'd appreciate the opportunity to work with new people,
+          new domains, and technologies.
+          I have experience working with the following languages:
+          C#, Golang, Python, JavaScript/HTML5/CSS3, Java, and R.
+          My cloud experience is primarily in AWS. Using infrastructure as code with Terraform
+          and deploying on ECS and Kubernetes. I'm a firm believer in owning your code and testing
+          to have confidence in proper CI/CD.
+        </p>
+        <p>
+          My work experience has been specialising in epidemiological and health data visualisation for a couple of years.
+          This was followed by a few years working in a platform engineering environment, producing
+          Highly Available shared services for millions of users.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid segment-dark">
+  <!--<div class="container">-->
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="seg-header">Projects</h1>
+      </div>
+    </div>
+    <div class="row">
+      {% for post in site.posts %}
+        <div class="portfolio-card col-xs-12 col-md-6 col-lg-4">
+          <figure class="snip1543">
+            <!--<img src="{{ post.image | prepend: '/img/portfolio/' | prepend: site.baseurl }}" alt="biosecurity image" />-->
+            <div class="portfolio-card-image" style="background-image: url('{{ post.image-sml | prepend: '/img/portfolio/' | prepend: site.baseurl }}')"></div>
+            <figcaption>
+              <h3>{{ post.title }}</h3>
+              <p>{{post.caption}}</p>
+            </figcaption>
+            <a href="{{ post.url | prepend: site.baseurl }}"></a>
+          </figure>
+          <!--<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>-->
+          <!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+        </div>
+      {% endfor %}
+    </div>
+  <!--</div>-->
+</div>
+<div class="container-fluid segment-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h1 class="seg-header">Let's Get In Touch!</h1>
+                <p class="fancy" style="margin-bottom: 50px;">
+                    Want to find out more about what I can offer you? Looking to hire? Awesome! Send me an email
+                    and I'll get back to you as soon as I can.
+                </p>
+            </div>
+            <div class="col-xs-12 text-xs-center">
+                <i class="fa fa-envelope-o fa-3x" style="color: #1e303e"></i>
+                <p><a class="glow-link fancy" href="mailto:geoff@longuet.nz">geoff@longuet.nz</a></p>
+            </div>
+        </div>
+    </div>
+</div>

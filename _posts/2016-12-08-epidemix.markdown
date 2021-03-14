@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Compartmental models visualisation tool"
+image-sml: "Epidemix-sml.jpg"
+image: ["Epidemix-full-1.jpg", "Epidemix-full-2.jpg"]
+date:   2016-12-07 16:50:00 +1200
+categories: portfolio
+caption: "Making epidemiological models more accessible."
+---
+
+Epi-interactive were tasked with developing an application for the
+<a href="http://www.rvc.ac.uk/" target="_blank">Royal Veterinary College (RVC), London</a>.
+This project involved working with R and Shiny.
+
+This project was built prior to my tenure at Epi-interactive. I was tasked with applying many bug fixes and client change requests.
+
+My contributions to the project were:
+
+- Applying client changes to the codebase
+- Numerous bug fixes

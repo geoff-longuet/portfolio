@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="container content">
+  <div class="row">
+    <div class="col-xs-12">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      </header>
+      </article>
+    </div>
+
+    <div class="col-xs-12 col-md-5">
+      {% for img in page.image %}
+      <img class="img-fluid post-img zoomable-img" target-lightbox="lightbox-img-{{forloop.index}}" src="{{ img | prepend: '/img/portfolio/' | prepend: site.baseurl }}">
+      <div class="lightbox" id="lightbox-img-{{forloop.index}}">
+        <div class="lightbox-inner">
+          <div class="close" target-lightbox="lightbox-img-{{forloop.index}}">×</div>
+          <img class="img-fluid" src="{{ img | prepend: '/img/portfolio/' | prepend: site.baseurl }}">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="col-xs-12 col-md-7">
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
