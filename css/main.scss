@@ -141,6 +141,8 @@ header.segment{
 }
 
 .splash-inner p{
+  color: #fff;
+  text-shadow: 0 0 4px #000;
   font-size: 22px;
 }
 
@@ -438,8 +440,6 @@ $breakpoint-desktop: 992px;
     margin-top: 54px;
   }
   .splash-inner p {
-    color: #fff;
-    background-color: rgba(0,0,0,0.5);
     margin: 0 -15px;
     padding: 0 15px;
   }

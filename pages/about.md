@@ -9,7 +9,7 @@ I have worked at <a href="https://www.callaghaninnovation.govt.nz/" target="_bla
 <h3 class="header-underline">What are your skills?</h3>
 
 <h4>Cloud</h4>
-I've been working with Amazon cloud in my last three workplaces. I've worked with a fair amount of event driven architecture using AWS services. And tackled the problems which come at scale. I've been working with Infrastructure as Code using Terraform for a few years, and even built and contributed to a couple or Terraform providers, including the AWS one. All non-legacy code
+I've been working with Amazon cloud in my last three workplaces. I've worked with a fair amount of event driven architecture using AWS services. And tackled the problems which come at scale. I've been working with Infrastructure as Code using Terraform for a few years, and even built and contributed to a couple of Terraform providers, including the AWS one. All non-legacy code
 I have deployed has been on either ECS of Kubernetes.
 
 <h4>C#</h4>
